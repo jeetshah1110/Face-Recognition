@@ -1,0 +1,6 @@
+conda activate env_dlib
+F:
+cd Project
+python encode_faces.py --dataset dataset --encodings encodings.pickle
+
+python recognize_faces_image.py --encodings encodings.pickle --image examples/MH10511.jpg
